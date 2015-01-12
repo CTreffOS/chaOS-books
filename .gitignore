@@ -1,0 +1,21 @@
+#OS generated files
+
+#MAC
+.DS_Store
+.DS_Store?
+.TRASHES
+*.~si
+
+#WIN
+Thumbs.db
+
+#Compiled sources
+*.class
+*.com
+*.dll
+*.exe
+*.o
+*.so
+
+#Vi Files
+*.swp
