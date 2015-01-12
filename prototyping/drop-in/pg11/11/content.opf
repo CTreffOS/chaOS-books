@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<package xmlns:opf="http://www.idpf.org/2007/opf" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.idpf.org/2007/opf" version="2.0" unique-identifier="id">
+  <metadata>
+    <dc:rights>Public domain in the USA.</dc:rights>
+    <dc:identifier id="id" opf:scheme="URI">http://www.gutenberg.org/ebooks/11</dc:identifier>
+    <dc:creator opf:file-as="Carroll, Lewis">Lewis Carroll</dc:creator>
+    <dc:title>Alice's Adventures in Wonderland</dc:title>
+    <dc:language xsi:type="dcterms:RFC4646">en</dc:language>
+    <dc:subject>Fantasy</dc:subject>
+    <dc:date opf:event="publication">2008-06-27</dc:date>
+    <dc:date opf:event="conversion">2014-07-23T05:32:15.375140+00:00</dc:date>
+    <dc:source>http://www.gutenberg.org/files/11/11-h/11-h.htm</dc:source>
+  </metadata>
+  <manifest>
+    <item href="pgepub.css" id="item1" media-type="text/css"/>
+    <item href="0.css" id="item2" media-type="text/css"/>
+    <item href="1.css" id="item3" media-type="text/css"/>
+    <!--Chunk: size=61147 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@11@11-h@11-h-0.htm.html" id="item4" media-type="application/xhtml+xml"/>
+    <!--Chunk: size=52918 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@11@11-h@11-h-1.htm.html" id="item5" media-type="application/xhtml+xml"/>
+    <!--Chunk: size=54936 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@11@11-h@11-h-2.htm.html" id="item6" media-type="application/xhtml+xml"/>
+    <!--Chunk: size=47660-->
+    <item href="@public@vhost@g@gutenberg@html@files@11@11-h@11-h-3.htm.html" id="item7" media-type="application/xhtml+xml"/>
+    <item href="toc.ncx" id="ncx" media-type="application/x-dtbncx+xml"/>
+  </manifest>
+  <spine toc="ncx">
+    <itemref idref="item4" linear="yes"/>
+    <itemref idref="item5" linear="yes"/>
+    <itemref idref="item6" linear="yes"/>
+    <itemref idref="item7" linear="yes"/>
+  </spine>
+  <guide>
+    <reference href="@public@vhost@g@gutenberg@html@files@11@11-h@11-h-0.htm.html#pgepubid00002" type="toc" title="Contents"/>
+  </guide>
+</package>
