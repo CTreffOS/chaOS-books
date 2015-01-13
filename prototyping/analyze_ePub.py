@@ -2,21 +2,20 @@ import zipfile
 import os
 import shutil
 import xml.dom.minidom
+from glob import glob
 
 #Gather all the ePubs
-toAnalyze = []
 dropIn = 'drop-in/'
-for file in os.listdir(dropIn):
-	if file.upper().endswith('.EPUB'): #making shure, we get all ePubs
-		toAnalyze.append(os.path.join(dropIn,file))
+toAnalyze = glob( os.path.join( dropIn, "*.epub") )
 
 for bookDir in toAnalyze:
 	unzipDir = bookDir.split('.epub')[0]
+	
 	os.mkdir(unzipDir)
 	with zipfile.ZipFile(bookDir, 'r') as z:
 		z.extractall(unzipDir)
 
-	#Now wie have everything we need in place - time to get some stuff done
+	#Now we have everything we need in place - time to get some stuff done
 	epubStruct = []
 	for root, dirs, files in os.walk(unzipDir, topdown=False):
 		for name in files:
