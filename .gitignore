@@ -19,3 +19,6 @@ Thumbs.db
 
 #Vi Files
 *.swp
+
+#PyCharm Project Files
+.idea/
