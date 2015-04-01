@@ -23,3 +23,9 @@ Thumbs.db
 
 #PyCharm Project Files
 .idea/
+
+#Binary Files
+*.mobi
+*.epub
+*.awz
+*.pdf
