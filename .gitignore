@@ -16,6 +16,7 @@ Thumbs.db
 *.exe
 *.o
 *.so
+*.pyc
 
 #Vi Files
 *.swp
