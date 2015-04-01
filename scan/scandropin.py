@@ -1,4 +1,4 @@
-import ebooks
+import ebook
 
 def main():
 	print ebooks.saysomething()
