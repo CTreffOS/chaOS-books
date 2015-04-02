@@ -3,7 +3,7 @@ chaOS-books
 
 Server to inventarysize and manage your e-books
 
-Project based on python and MariaDB
+Project based on python, djnago and postgresql
 
 Notes (German)
 ============
@@ -14,3 +14,6 @@ more soon....
 Software Requirements
 ============
 You need python (of course) and these following commands to install additional packages:
+django
+postresql
+psycopg2
