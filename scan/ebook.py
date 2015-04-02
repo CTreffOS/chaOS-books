@@ -3,6 +3,7 @@ import shutil
 import sys
 import os
 import xml.dom.minidom
+import base64
 
 class ebook:
     def __init__(self, ebookfile):
@@ -11,17 +12,30 @@ class ebook:
         self.extractdir = self.file.split('.')[0]
 
         if self.booktype == '.EPUB':
+            # ePub is just a simple zip file
             os.mkdir(self.extractdir)
             try:
                 with zipfile.ZipFile(self.file, 'r') as z:
                     z.extractall(self.extractdir)
             except Exception as ex:
                 self.throwexception("Unexpexted Error during extraction of " + self.file, ex, "true")
+        if self.booktype == '.MOBI':
+            # Mobi is LZ77 compressed
+            print "something"
 
         self.title = self.gettitle()
         self.author = self.getauthor()
         self.subject = self.getsubject()
         self.language = self.getlanguage()
+        self.cover = self.getcover()
+
+    def getcover(self):
+        if self.booktype == '.EPUB':
+            coverfile = u"{0}".format(self.getfilewithextionsion(self.extractdir, '.jpg'))
+            if coverfile != 'None':
+                with open(coverfile, "rb") as image_file:
+                    encoded_string = base64.b64encode(image_file.read())
+                return encoded_string
 
     def gettitle(self):
         if self.booktype == '.EPUB':
